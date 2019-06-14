@@ -6,8 +6,10 @@ class Smurfs extends Component {
   render() {
     return (
       <div className="Smurfs">
-        <h1>Smurf Village</h1>
-        <ul>
+        <div className="jumbotron">
+          <h1>Smurf Village</h1>
+        </div>
+        <ul className="d-inline-flex flex-wrap justify-content-around p-0">
           {this.props.smurfs.map(smurf => {
             return (
               <Smurf
