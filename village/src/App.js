@@ -25,7 +25,9 @@ class App extends Component {
         this.setState({ smurfs: res.data });
       });
   }
-
+addSmurfs = (smurfs) => {
+  this.setState({smurfs})
+}
   render() {
     return (
       <div className="container">
@@ -45,9 +47,14 @@ class App extends Component {
               </NavLink>
             </div>
           </div>
-        <Route 
-          path="/smurf-form"
-          component={SmurfForm}
+          <Route 
+          exact path="/smurf-form" 
+          render={props => 
+            <SmurfForm 
+              {...props} 
+              addSmurfs={this.addSmurfs}
+            />
+          } 
         />
         <Route 
           exact path="/" 
