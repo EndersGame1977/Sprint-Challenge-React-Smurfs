@@ -1,3 +1,34 @@
 .App {
   text-align: center;
 }
+
+body {
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/78/57/1157c16dd9b4b61.jpg');
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-color: #62cdfd;
+}
+.navbar a {
+  color: white;
+}
+
+
+
+.card {
+  width: 15rem;
+}
+.card h3, .card p, .card strong, .jumbotron {
+  background-color: #62cdfd;
+  color: white;
+}
+
+.jumbotron {
+  background-image: url('https://wallpapersite.com/images/pages/pic_w/2350.jpg');
+  margin-top: 70px;
+}
+
+.SmurfForm {
+  margin-top: 70px;
+}

@@ -2,10 +2,24 @@ import React from 'react';
 
 const Smurf = props => {
   return (
-    <div className="Smurf">
-      <h3>{props.name}</h3>
-      <strong>{props.height} tall</strong>
-      <p>{props.age} smurf years old</p>
+    <div className="Smurf card m-1">
+      <h3 className="list-group-item">{props.name}</h3>
+      <strong className="list-group-item d-flex justify-content-between">
+        <div>
+          {props.height}cm
+        </div>
+        <div> 
+          tall
+        </div>
+      </strong>
+      <p className="list-group-item d-flex justify-content-between">
+        <div>
+          {props.age}/smurf years
+        </div>
+        <div> 
+          old
+        </div>
+      </p>
     </div>
   );
 };
